@@ -103,7 +103,7 @@ button:hover {
 
 header {
 	background: #2d4a22;
-	padding: 2rem 0 10rem;
+	padding: 2rem 0 11rem;
 	text-align: center;
 }
 
@@ -113,7 +113,7 @@ header {
 }
 
 #balance {
-	margin-top: -8rem;
+	margin-top: -5rem;
 }
 
 #balance h2 {
