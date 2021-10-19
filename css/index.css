@@ -97,7 +97,7 @@ button:hover {
 	opacity: 0.6;
 }
 
-.button.cancel:hover{
+.button.cancel:hover {
 	opacity: 1;
 }
 
@@ -146,6 +146,10 @@ header {
 }
 
 .card.total {
+	background: var(--button-cancel);
+	color: white;
+}
+.card.total.positive {
 	background: var(--button-confirm);
 	color: white;
 }
@@ -179,6 +183,10 @@ header {
 #data-table td {
 	background: white;
 	padding: 1rem 2rem;
+}
+
+#data-table td img {
+	cursor: pointer;
 }
 
 #data-table thead tr th:first-child,
