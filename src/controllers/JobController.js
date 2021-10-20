@@ -3,12 +3,11 @@ const JobUtils = require("../utils/JobUtils")
 const Profile = require("../model/Profile")
 
 module.exports = {
-	
 	create(req, res) {
 		return res.render("job")
 	},
 	save(req, res) {
-        const jobs = Job.get()
+		const jobs = Job.get()
 		const lastId = jobs[jobs.length - 1]?.id || 0
 
 		const job = req.body
@@ -17,7 +16,7 @@ module.exports = {
 		job.dailyHours = Number(job.dailyHours)
 		job.totalHours = Number(job.totalHours)
 
-		jobs.push({
+		Job.create({
 			id: lastId + 1,
 			name: job.name,
 			dailyHours: job.dailyHours,
@@ -68,14 +67,14 @@ module.exports = {
 			return job
 		})
 
-        Job.set(newJobs)
+		Job.set(newJobs)
 
 		return res.redirect("/")
 	},
 	delete(req, res) {
 		const jobId = req.params.id
 
-        Job.delete(jobId)
+		Job.delete(jobId)
 
 		return res.redirect("/")
 	},
