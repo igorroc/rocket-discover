@@ -51,3 +51,16 @@ aside p {
 main {
   flex: 1;
 }
+
+@media (max-width: 900px) {
+  #page-profile .page-header ~ .container {
+    flex-direction: column;
+  }
+  aside.card{
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  form .input-group .input-wrapper{
+    flex: 1;
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"name": "rocket-discover",
+	"version": "1.0.0",
+	"description": "Freelance Calculator",
+	"main": "src/server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/igorroc/rocket-discover.git"
+	},
+	"keywords": [],
+	"author": "Igor Rocha",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/igorroc/rocket-discover/issues"
+	},
+	"homepage": "https://github.com/igorroc/rocket-discover#readme",
+	"dependencies": {
+		"ejs": "^3.1.6",
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.14"
+	}
+}
