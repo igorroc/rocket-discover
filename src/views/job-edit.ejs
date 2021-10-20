@@ -29,7 +29,7 @@
   <body id="page-job-edit">
     <%- include ('components/page-header', {title: "Editar Job"}) %>
 
-    <div class="container flex animate-up delay-2">
+    <div class="container flex animate-up delay-2 mobile-flex-column">
         <form id="form-job" method="post">
           <fieldset>
             <legend>Dados do Job</legend>
@@ -51,7 +51,7 @@
                   por dia vai dedicar ao job?</label>
                 <input 
                   type="number"
-                  step="0.1" 
+                  step="1" 
                   id="dailyHours" 
                   name="dailyHours"
                   value="<%= job.dailyHours %>"/>

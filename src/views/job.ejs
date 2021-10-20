@@ -25,7 +25,7 @@
 	<body id="page-job">
 		<%- include ('components/page-header', {title: "Adicionar novo Job"}) %>
 
-		<div class="container flex animate-up delay-2">
+		<div class="container flex animate-up delay-2 mobile-flex-column">
 			<main>
 				<form id="form-job" action="/job" method="post">
 					<fieldset>
@@ -45,7 +45,7 @@
 								>
 								<input
 									type="number"
-									step="0.1"
+									step="1"
 									id="dailyHours"
 									name="dailyHours"
 									required

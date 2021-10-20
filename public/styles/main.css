@@ -40,8 +40,8 @@
 	--color-header-inner-title: #e9e9e9;
 
 	--color-modal-background: #222227;
-	--color-modal-text: #fff;
-	--color-modal-title: #afafaf;
+	--color-modal-title: #fff;
+	--color-modal-text: #afafaf;
 }
 
 /* user-agent font-size is 16px, let's make it responsive */
@@ -88,7 +88,7 @@ a {
 	text-decoration: none;
 }
 
-footer{
+.white-space-bottom {
 	height: 100px;
 	width: 100vw;
 }
@@ -97,6 +97,10 @@ footer{
 .container {
 	width: min(1440px, 90vw);
 	margin: 0 auto;
+}
+
+.container.mobile-flex-column {
+	justify-content: space-between;
 }
 
 .sr-only {
@@ -123,4 +127,49 @@ footer{
 
 .flex {
 	display: flex;
+}
+
+.noJobs {
+	width: 70vw;
+	margin: 0 auto;
+	font-size: 3rem;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.noJobs > img {
+	width: min(100%, 500px);
+}
+
+.noJobs > div {
+	margin-bottom: 2rem;
+}
+
+.noJobs > div > strong {
+	font-size: 3rem;
+}
+
+.noJobs > div > p {
+	font-size: 1.5rem;
+	opacity: 0.8;
+}
+
+.noJobs > a {
+	line-height: 0;
+	font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+	.container.mobile-flex-column {
+		flex-direction: column;
+		gap: 5rem;
+	}
+	.container.mobile-flex-column aside {
+		margin: 0 auto;
+	}
 }
